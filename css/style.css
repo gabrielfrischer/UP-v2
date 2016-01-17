@@ -1,0 +1,384 @@
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+
+body{
+    background-color: #f1f1f1;
+    color:white;
+
+}
+
+#bottomNav{
+  top:94%;
+  position:fixed;
+  width:100%;
+  z-index:99;
+  padding-bottom:10px;
+}
+.navigation{
+  height:80px;
+}
+
+.textShadow {
+color: white;
+font-weight: bold;
+font-family: arial;
+text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0,0,0,.1), 0 0 5px rgba(0,0,0,.1), 0 1px 3px rgba(0,0,0,.3), 0 3px 5px rgba(0,0,0,.2), 0 5px 10px rgba(0,0,0,.25), 0 10px 10px rgba(0,0,0,.2), 0 20px 20px rgba(0,0,0,.15);
+}
+
+
+#orbit-system {
+  position: relative;
+  width: 18em;
+  height: 18em;
+  margin: 0 auto;
+    -ms-transform: scale(0.8,0.8); /* IE 9 */
+    -webkit-transform: scale(0.8,0.8); /* Safari */
+    transform: scale(0.8,0.8);
+}
+
+.system {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  
+  -webkit-transform: rotateX(75deg) rotateY(-30deg);
+  transform: rotateX(75deg) rotateY(-30deg);
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+
+.planet, .satellite-orbit1, .satellite1, .satellite-orbit2, .satellite2, .satellite-orbit3, .satellite3, .satellite-orbit4, .satellite4, .satellite-orbit5, .satellite5 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+
+.planet {
+  width: 9em;
+  height: 9em;
+  margin-top: -4.5em;
+  margin-left: -4.5em;
+  
+  border-radius: 50%;
+  background: #cedce7; /* Old browsers */
+background: -moz-linear-gradient(-45deg, #cedce7 0%, #596a72 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(-45deg, #cedce7 0%,#596a72 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(135deg, #cedce7 0%,#596a72 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  color: black;
+  
+  text-align: center;
+  line-height: 9em;
+  
+  -webkit-transform: rotateY(30deg) rotateX(-75deg);
+  transform: rotateY(30deg) rotateX(-75deg);
+}
+
+.satellite-orbit1 {
+	width: 16em;
+  height: 16em;
+  margin-top: -8em;
+  margin-left: -8em;
+  
+  border: 5px solid black;
+  opacity:1;
+  border-radius: 50%;
+  
+  -webkit-animation-name: orbit;
+  animation-name: orbit;
+  -webkit-animation-duration: 5s;
+  animation-duration: 5s;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+}
+
+.satellite1 {
+  top: 100%;
+  width: 3em;
+  height: 3em;
+  margin-top: -1.5em;
+  margin-left: -1.5em;
+  
+  color: black;
+  background-color: #2196f3; /*standard blue*/
+  border-radius: 50%;
+  text-align: center;
+  line-height: 3em;
+  
+  -webkit-animation-name: invert-orbit;
+  animation-name: invert-orbit;
+  -webkit-animation-duration: 5s;
+  animation-duration: 5s;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+}
+
+.satellite-orbit2 {
+  width: 16em;
+  height: 16em;
+  margin-top: -8em;
+  margin-left: -8em;
+  
+  border: 3px solid black;
+  opacity:1;
+  border-radius: 50%;
+  
+  -webkit-animation-name: orbit;
+  animation-name: orbit;
+  -webkit-animation-duration: 10s;
+  animation-duration: 10s;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+}
+
+.satellite2 {
+  top: 100%;
+  width: 3em;
+  height: 3em;
+  margin-top: -1.5em;
+  margin-left: -1.5em;
+  
+  color: black;
+  background-color: #4caf50; /*standard green*/
+  border-radius: 50%;
+  text-align: center;
+  line-height: 3em;
+  
+  -webkit-animation-name: invert-orbit;
+  animation-name: invert-orbit;
+  -webkit-animation-duration: 10s;
+  animation-duration: 10s;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+}
+
+.satellite-orbit3 {
+  width: 16em;
+  height: 16em;
+  margin-top: -8em;
+  margin-left: -8em;
+  
+  border: 3px solid black;
+  opacity:1;
+  border-radius: 50%;
+  
+  -webkit-animation-name: orbit;
+  animation-name: orbit;
+  -webkit-animation-duration: 8s;
+  animation-duration: 8s;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+}
+
+.satellite3 {
+  top: 100%;
+  width: 3em;
+  height: 3em;
+  margin-top: -1.5em;
+  margin-left: -1.5em;
+  
+  color: black;
+  background-color: #ffc107; /*standard yellow*/
+  border-radius: 50%;
+  text-align: center;
+  line-height: 3em;
+  
+  -webkit-animation-name: invert-orbit;
+  animation-name: invert-orbit;
+  -webkit-animation-duration: 8s;
+  animation-duration: 8s;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+}
+
+.satellite-orbit4 {
+  width: 16em;
+  height: 16em;
+  margin-top: -8em;
+  margin-left: -8em;
+  
+  border: 3px solid black;
+  border-radius: 50%;
+  
+  -webkit-animation-name: orbit;
+  animation-name: orbit;
+  -webkit-animation-duration: 20s;
+  animation-duration: 20s;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+}
+
+.satellite4 {
+  top: 100%;
+  width: 3em;
+  height: 3em;
+  margin-top: -1.5em;
+  margin-left: -1.5em;
+  
+  color: black;
+  background-color: #ff5722; /*standard red*/
+  border-radius: 50%;
+  text-align: center;
+  line-height: 3em;
+  
+  -webkit-animation-name: invert-orbit;
+  animation-name: invert-orbit;
+  -webkit-animation-duration: 20s;
+  animation-duration: 20s;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+}
+
+.satellite-orbit5 {
+  width: 16em;
+  height: 16em;
+  margin-top: -8em;
+  margin-left: -8em;
+  
+  border: 3px solid black;
+  border-radius: 50%;
+  opacity:1;
+  
+  -webkit-animation-name: orbit;
+  animation-name: orbit;
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+}
+
+.satellite5 {
+  top: 100%;
+  width: 3em;
+  height: 3em;
+  margin-top: -1.5em;
+  margin-left: -1.5em;
+  
+  color: black;
+  background-color: #ab47bc; /*standard purple*/
+  border-radius: 50%;
+  text-align: center;
+  line-height: 3em;
+  
+  -webkit-animation-name: invert-orbit;
+  animation-name: invert-orbit;
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+}
+
+
+@-webkit-keyframes orbit {
+    0% {
+        transform: rotateZ(0deg);
+    }
+    100% {
+        transform: rotateZ(360deg);
+    }
+}
+@keyframes orbit {
+    0% {
+        transform: rotateZ(0deg);
+    }
+    100% {
+        transform: rotateZ(360deg);
+    }
+}
+
+/*
+In order to invert the rotation, do the rotate* transforms in reverse order.
+
+Here, we rotated the system with rotateX(75deg) rotateY(-30deg), and then we are animating the rotation of the orbit with rotateZ(0-360deg). To reverse that, we need to reverse the last transform applied (rotateZ), then rotateY, then rotateX.
+
+The rotateX/Y reversal is easy since it's not animated, so just use its opposite (30deg, -75deg). The rotateZ is trickier since it's animating, but since it's rotating from 0 to 360, we just need to animate the satellite from 360 to 0.
+*/
+@-webkit-keyframes invert-orbit {
+    0% {
+        transform: rotateZ(360deg) rotateY(30deg) rotateX(-75deg);
+    }
+
+    100% {
+        transform: rotateZ(0deg) rotateY(30deg) rotateX(-75deg);
+    }
+}
+@keyframes invert-orbit {
+    0% {
+        transform: rotateZ(360deg) rotateY(30deg) rotateX(-75deg);
+    }
+
+    100% {
+        transform: rotateZ(0deg) rotateY(30deg) rotateX(-75deg);
+    }
+}
+
+nav ul a,
+nav .brand-logo {
+  color: #444;
+}
+
+p {
+  line-height: 2rem;
+}
+
+.button-collapse {
+  color: white;
+}
+
+.sidebar{
+    padding-top: 200px;
+}
+
+@media only screen and (max-width : 992px) {
+  .parallax-container .section {
+    position: absolute;
+    top: 40%;
+  }
+  #index-banner .section {
+    top: 10%;
+  }
+}
+
+@media only screen and (max-width : 600px) {
+  #index-banner .section {
+    top: 0;
+  }
+}
+
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+  font-size: inherit;
+}
+
+footer.page-footer {
+  margin: 0;
+}
