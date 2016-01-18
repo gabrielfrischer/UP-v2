@@ -14,4 +14,9 @@ $(document).ready(function(){
   });
        
 
-       
+ $(document).ready(
+    function() {
+        $("#hideandshow").click(function() {
+            $(".satelliteBox").fadeToggle();
+        });
+    });
