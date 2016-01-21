@@ -20,3 +20,7 @@ $(document).ready(function(){
             $(".satelliteBox").fadeToggle();
         });
     });
+
+   $(document).ready(function(){
+    $('ul.tabs').tabs();
+  });
