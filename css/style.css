@@ -9,7 +9,13 @@
 body  {
 background: #e8eaf6;}
 
-
+#map {
+    background: url(..font/material-design-icons/map.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
 
 
 #topNav{
