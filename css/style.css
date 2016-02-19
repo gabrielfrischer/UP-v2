@@ -17,6 +17,187 @@ background: #e8eaf6;}
   background-size: cover;
 }
 
+/*ribbon for lyft*/
+.popout1 {
+  position: relative;
+  bottom: 6.52rem;
+  left: -10rem;
+}
+.popout1 .btn1 {
+  display: inline-block;
+  position: relative;
+  outline: none;
+  -webkit-user-select: none;
+  user-select: none;
+  cursor: pointer;
+  width: 25px;
+  height: 70px;
+  line-height: 60px;
+  text-align: center;
+  z-index: 999;
+  background: white;
+  color: white;
+  border-radius: 0%;
+  box-shadow: 1px 1px 2px #888888;
+  transition:0.2s opacity ease-in-out;
+  -webkit-transition:0.2s opacity ease-in-out;
+}
+.popout1 .btn1.active {
+  visibility: hidden;
+  opacity: 0;
+}
+.popout1 .btn1:after {
+  display: block;
+  position: absolute;
+  top: 0;
+  content: "";
+  border-radius: 0%;
+  width: 25px;
+  height: 70px;
+  background: #f44336;
+  z-index: -2;
+  -webkit-transition: -webkit-transform 0.2s, opacity 0.2s;
+  -moz-transition: -moz-transform 0.2s, opacity 0.2s;
+  transition: transform 0.2s, opacity 0.2s;
+}
+.popout1 .btn1:active:after {
+  -webkit-transform: scale(0.8);
+  -moz-transform: scale(0.8);
+  -ms-transform: scale(0.8);
+  transform: scale(0.8);
+  opacity: 0;
+}
+.popout1 .panel1 {
+  box-shadow: 0 0 5px rgba(0,0,0,0.15);
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 200px;
+  z-index:999;
+  text-align: center;
+  overflow: hidden;
+  visibility: hidden;
+  transform: scale(0);
+  transform-origin: 100% 100%;
+  transition: transform 0.2s, visibility 0s 0.2s, opacity: 0.2s;
+  opacity: 0;
+}
+.popout1 .panel1.active {
+  height: auto;
+  opacity: 1;
+  visibility: visible;
+  transform: scale(1);
+  transition: transform 0.2s, visibility 0s 0s, opacity 0.2s;
+}
+.popout1 .panel-header1 {
+  padding: 5px;
+  font-size: 15px;
+  background-color: #f44336;
+  color: #fff;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+.popout1 .panel-body1 {
+  padding: 10px 20px;
+  background-color: #fff;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  font-size: 11px;
+  color: #aaa;
+}
+
+/*end of lyft ribbon*/
+
+/*ribbon for getaround*/
+.popout2 {
+  position: relative;
+  bottom: 5.60rem;
+  left: -10rem;
+}
+.popout2 .btn2 {
+  display: inline-block;
+  position: relative;
+  outline: none;
+  -webkit-user-select: none;
+  user-select: none;
+  cursor: pointer;
+  width: 25px;
+  height: 70px;
+  line-height: 60px;
+  text-align: center;
+  z-index: 999;
+  background: white;
+  color: white;
+  border-radius: 0%;
+  box-shadow: 1px 1px 2px #888888;
+  transition:0.2s opacity ease-in-out;
+  -webkit-transition:0.2s opacity ease-in-out;
+}
+.popout2 .btn2.active {
+  visibility: hidden;
+  opacity: 0;
+}
+.popout2 .btn2:after {
+  display: block;
+  position: absolute;
+  top: 0;
+  content: "";
+  border-radius: 0%;
+  width: 25px;
+  height: 70px;
+  background: #4caf50;
+  z-index: -2;
+  -webkit-transition: -webkit-transform 0.2s, opacity 0.2s;
+  -moz-transition: -moz-transform 0.2s, opacity 0.2s;
+  transition: transform 0.2s, opacity 0.2s;
+}
+.popout2 .btn2:active:after {
+  -webkit-transform: scale(0.8);
+  -moz-transform: scale(0.8);
+  -ms-transform: scale(0.8);
+  transform: scale(0.8);
+  opacity: 0;
+}
+.popout2 .panel2 {
+  box-shadow: 0 0 5px rgba(0,0,0,0.15);
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 200px;
+  z-index:999;
+  text-align: center;
+  overflow: hidden;
+  visibility: hidden;
+  transform: scale(0);
+  transform-origin: 100% 100%;
+  transition: transform 0.2s, visibility 0s 0.2s, opacity: 0.2s;
+  opacity: 0;
+}
+.popout2 .panel2.active {
+  height: auto;
+  opacity: 1;
+  visibility: visible;
+  transform: scale(1);
+  transition: transform 0.2s, visibility 0s 0s, opacity 0.2s;
+}
+.popout2 .panel-header2 {
+  padding: 5px;
+  font-size: 15px;
+  background-color: #4caf50;
+  color: #fff;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+.popout2 .panel-body2 {
+  padding: 10px 20px;
+  background-color: #fff;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  font-size: 11px;
+  color: #aaa;
+}
+
+/*end of getaround ribbon*/
 
 #topNav{
       top:0%;
@@ -33,16 +214,6 @@ background-color:#00e676;
   font-family:Tahoma;
 color: white;
 text-shadow:2px 4px 3px rgba(0,0,0,0.3)
-}
-
-
-
-
-#ufoButton{
-
--ms-transform: rotate(180deg); /* IE 9 */
-    -webkit-transform: rotate(180deg); /* Chrome, Safari, Opera */
-    transform: rotate(180deg);
 }
 
 
