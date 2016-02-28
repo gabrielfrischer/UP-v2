@@ -61,4 +61,42 @@ $(".popout2 .btn2").click(function(event) {
 
 // end of popout function
 
+   // Start of popout function
+$(".popout3 .btn3").click(function() {
+  $(this).toggleClass("active");
+  $(this).closest(".popout3").find(".panel3").toggleClass("active");
+});
+$(document).click(function() {
+  $(".popout3 .panel3").removeClass("active");
+  $(".popout3 .btn3").removeClass("active");
+});
+$(".popout3 .panel3").click(function(event) {
+  event.stopPropagation();
+});
+$(".popout3 .btn3").click(function(event) {
+  event.stopPropagation();
+});
+
+// end of popout function
+
+   // Start of popout function
+$(".popout4 .btn4").click(function() {
+  $(this).toggleClass("active");
+  $(this).closest(".popout4").find(".panel4").toggleClass("active");
+});
+$(document).click(function() {
+  $(".popout4 .panel4").removeClass("active");
+  $(".popout4 .btn4").removeClass("active");
+});
+$(".popout4 .panel4").click(function(event) {
+  event.stopPropagation();
+});
+$(".popout4 .btn4").click(function(event) {
+  event.stopPropagation();
+});
+
+// end of popout function
+
+
+
 

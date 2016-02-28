@@ -6,6 +6,9 @@
  * Made By MaterializeCSS.com
  */
 
+  @import url(http://fonts.googleapis.com/css?family=Righteous);
+
+
 body  {
 background: #e8eaf6;}
 
@@ -20,7 +23,7 @@ background: #e8eaf6;}
 /*ribbon for lyft*/
 .popout1 {
   position: relative;
-  bottom: 6.52rem;
+  bottom: 6.55rem;
   left: -10rem;
 }
 .popout1 .btn1 {
@@ -34,7 +37,7 @@ background: #e8eaf6;}
   height: 70px;
   line-height: 60px;
   text-align: center;
-  z-index: 999;
+  z-index: 998;
   background: white;
   color: white;
   border-radius: 0%;
@@ -111,7 +114,7 @@ background: #e8eaf6;}
 /*ribbon for getaround*/
 .popout2 {
   position: relative;
-  bottom: 5.60rem;
+  bottom: 5.65rem;
   left: -10rem;
 }
 .popout2 .btn2 {
@@ -125,7 +128,7 @@ background: #e8eaf6;}
   height: 70px;
   line-height: 60px;
   text-align: center;
-  z-index: 999;
+  z-index: 998;
   background: white;
   color: white;
   border-radius: 0%;
@@ -199,6 +202,189 @@ background: #e8eaf6;}
 
 /*end of getaround ribbon*/
 
+
+/*ribbon for Postmates*/
+.popout3 {
+  position: relative;
+  bottom: 5.15rem;
+  left: -10rem;
+}
+.popout3 .btn3 {
+  display: inline-block;
+  position: relative;
+  outline: none;
+  -webkit-user-select: none;
+  user-select: none;
+  cursor: pointer;
+  width: 25px;
+  height: 70px;
+  line-height: 60px;
+  text-align: center;
+  z-index: 998;
+  background: white;
+  color: white;
+  border-radius: 0%;
+  box-shadow: 1px 1px 2px #888888;
+  transition:0.2s opacity ease-in-out;
+  -webkit-transition:0.2s opacity ease-in-out;
+}
+.popout3 .btn3.active {
+  visibility: hidden;
+  opacity: 0;
+}
+.popout3 .btn3:after {
+  display: block;
+  position: absolute;
+  top: 0;
+  content: "";
+  border-radius: 0%;
+  width: 25px;
+  height: 70px;
+  background: #ffc107;
+  z-index: -2;
+  -webkit-transition: -webkit-transform 0.2s, opacity 0.2s;
+  -moz-transition: -moz-transform 0.2s, opacity 0.2s;
+  transition: transform 0.2s, opacity 0.2s;
+}
+.popout3 .btn3:active:after {
+  -webkit-transform: scale(0.8);
+  -moz-transform: scale(0.8);
+  -ms-transform: scale(0.8);
+  transform: scale(0.8);
+  opacity: 0;
+}
+.popout3 .panel3 {
+  box-shadow: 0 0 5px rgba(0,0,0,0.15);
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 200px;
+  z-index:999;
+  text-align: center;
+  overflow: hidden;
+  visibility: hidden;
+  transform: scale(0);
+  transform-origin: 100% 100%;
+  transition: transform 0.2s, visibility 0s 0.2s, opacity: 0.2s;
+  opacity: 0;
+}
+.popout3 .panel3.active {
+  height: auto;
+  opacity: 1;
+  visibility: visible;
+  transform: scale(1);
+  transition: transform 0.2s, visibility 0s 0s, opacity 0.2s;
+}
+.popout3 .panel-header3 {
+  padding: 5px;
+  font-size: 15px;
+  background-color: #ffc107;
+  color: #fff;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+.popout3 .panel-body3 {
+  padding: 10px 20px;
+  background-color: #fff;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  font-size: 11px;
+  color: #aaa;
+}
+
+/*end of Postmates ribbon*/
+
+/*ribbon for AirBNB*/
+.popout4 {
+  position: relative;
+  bottom: 4.95rem;
+  left: -10rem;
+}
+.popout4 .btn4 {
+  display: inline-block;
+  position: relative;
+  outline: none;
+  -webkit-user-select: none;
+  user-select: none;
+  cursor: pointer;
+  width: 25px;
+  height: 70px;
+  line-height: 60px;
+  text-align: center;
+  z-index: 998;
+  background: white;
+  color: white;
+  border-radius: 0%;
+  box-shadow: 1px 1px 2px #888888;
+  transition:0.2s opacity ease-in-out;
+  -webkit-transition:0.2s opacity ease-in-out;
+}
+.popout4 .btn4.active {
+  visibility: hidden;
+  opacity: 0;
+}
+.popout4 .btn4:after {
+  display: block;
+  position: absolute;
+  top: 0;
+  content: "";
+  border-radius: 0%;
+  width: 25px;
+  height: 70px;
+  background: #2196f3;
+  z-index: -2;
+  -webkit-transition: -webkit-transform 0.2s, opacity 0.2s;
+  -moz-transition: -moz-transform 0.2s, opacity 0.2s;
+  transition: transform 0.2s, opacity 0.2s;
+}
+.popout4 .btn4:active:after {
+  -webkit-transform: scale(0.8);
+  -moz-transform: scale(0.8);
+  -ms-transform: scale(0.8);
+  transform: scale(0.8);
+  opacity: 0;
+}
+.popout4 .panel4 {
+  box-shadow: 0 0 5px rgba(0,0,0,0.15);
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 200px;
+  z-index:999;
+  text-align: center;
+  overflow: hidden;
+  visibility: hidden;
+  transform: scale(0);
+  transform-origin: 100% 100%;
+  transition: transform 0.2s, visibility 0s 0.2s, opacity: 0.2s;
+  opacity: 0;
+}
+.popout4 .panel4.active {
+  height: auto;
+  opacity: 1;
+  visibility: visible;
+  transform: scale(1);
+  transition: transform 0.2s, visibility 0s 0s, opacity 0.2s;
+}
+.popout4 .panel-header4 {
+  padding: 5px;
+  font-size: 15px;
+  background-color: #2196f3;
+  color: #fff;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+.popout4 .panel-body4 {
+  padding: 10px 20px;
+  background-color: #fff;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  font-size: 11px;
+  color: #aaa;
+}
+
+/*end of AirBNB ribbon*/
+
 #topNav{
       top:0%;
   position:fixed;
@@ -211,9 +397,14 @@ background-color:#00e676;
 }
 
 .textShadow {
-  font-family:Tahoma;
+  margin-top:0px;
 color: white;
-text-shadow:2px 4px 3px rgba(0,0,0,0.3)
+font-family: Righteous;
+}
+.textShadowPartner {
+  margin-top:10px;
+color: white;
+font-family: Righteous;
 }
 
 
